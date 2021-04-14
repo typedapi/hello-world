@@ -1,0 +1,21 @@
+{
+  "name": "typedapi-hello-world-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc server.ts && node server.js",
+    "parseApi": "typedapi-parse Api.ts Api ../client/apiReflection.ts apiReflection.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typedapi-core": "^0.3.1",
+    "typedapi-server": "^0.3.1",
+    "typedapi-server-ws": "*"
+  },
+  "devDependencies": {
+    "typedapi-parser": "*"
+  }
+}
